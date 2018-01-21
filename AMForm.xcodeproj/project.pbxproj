@@ -10,8 +10,11 @@
 		7133053C30DF6BE7B6922D30 /* Pods_AMFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */; };
 		D5FB878C6986E0C7C2010D1F /* Pods_AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A911098CD2C286BE99D81D1 /* Pods_AMForm.framework */; };
 		FAE1E0B420150EFE0014BAFA /* AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE1E0AA20150EFE0014BAFA /* AMForm.framework */; };
-		FAE1E0B920150EFE0014BAFA /* AMFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0B820150EFE0014BAFA /* AMFormTests.swift */; };
 		FAE1E0BB20150EFE0014BAFA /* AMForm.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE1E0AD20150EFE0014BAFA /* AMForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE1E0C620151A1D0014BAFA /* AMFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0C520151A1D0014BAFA /* AMFormTests.swift */; };
+		FAE1E0C920151D350014BAFA /* AMFormInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0C820151D350014BAFA /* AMFormInput.swift */; };
+		FAE1E0CC20151DAF0014BAFA /* AMForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0CB20151DAF0014BAFA /* AMForm.swift */; };
+		FAE1E0CF20151F0E0014BAFA /* AMFormInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0CE20151F0E0014BAFA /* AMFormInputTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,11 @@
 		FAE1E0AD20150EFE0014BAFA /* AMForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMForm.h; sourceTree = "<group>"; };
 		FAE1E0AE20150EFE0014BAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE1E0B320150EFE0014BAFA /* AMFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE1E0B820150EFE0014BAFA /* AMFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFormTests.swift; sourceTree = "<group>"; };
 		FAE1E0BA20150EFE0014BAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE1E0C520151A1D0014BAFA /* AMFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFormTests.swift; sourceTree = "<group>"; };
+		FAE1E0C820151D350014BAFA /* AMFormInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFormInput.swift; sourceTree = "<group>"; };
+		FAE1E0CB20151DAF0014BAFA /* AMForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMForm.swift; sourceTree = "<group>"; };
+		FAE1E0CE20151F0E0014BAFA /* AMFormInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFormInputTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		FAE1E0AC20150EFE0014BAFA /* AMForm */ = {
 			isa = PBXGroup;
 			children = (
+				FAE1E0CA20151DA40014BAFA /* AMForm */,
+				FAE1E0C720151D120014BAFA /* AMFormInput */,
 				FAE1E0AD20150EFE0014BAFA /* AMForm.h */,
 				FAE1E0AE20150EFE0014BAFA /* Info.plist */,
 			);
@@ -112,10 +120,43 @@
 		FAE1E0B720150EFE0014BAFA /* AMFormTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAE1E0B820150EFE0014BAFA /* AMFormTests.swift */,
+				FAE1E0CD20151EFF0014BAFA /* AMFormInput */,
+				FAE1E0C4201519F40014BAFA /* AMForm */,
 				FAE1E0BA20150EFE0014BAFA /* Info.plist */,
 			);
 			path = AMFormTests;
+			sourceTree = "<group>";
+		};
+		FAE1E0C4201519F40014BAFA /* AMForm */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1E0C520151A1D0014BAFA /* AMFormTests.swift */,
+			);
+			path = AMForm;
+			sourceTree = "<group>";
+		};
+		FAE1E0C720151D120014BAFA /* AMFormInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1E0C820151D350014BAFA /* AMFormInput.swift */,
+			);
+			path = AMFormInput;
+			sourceTree = "<group>";
+		};
+		FAE1E0CA20151DA40014BAFA /* AMForm */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1E0CB20151DAF0014BAFA /* AMForm.swift */,
+			);
+			path = AMForm;
+			sourceTree = "<group>";
+		};
+		FAE1E0CD20151EFF0014BAFA /* AMFormInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAE1E0CE20151F0E0014BAFA /* AMFormInputTests.swift */,
+			);
+			path = AMFormInput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +226,7 @@
 				TargetAttributes = {
 					FAE1E0A920150EFE0014BAFA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					FAE1E0B220150EFE0014BAFA = {
@@ -322,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE1E0C920151D350014BAFA /* AMFormInput.swift in Sources */,
+				FAE1E0CC20151DAF0014BAFA /* AMForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE1E0B920150EFE0014BAFA /* AMFormTests.swift in Sources */,
+				FAE1E0CF20151F0E0014BAFA /* AMFormInputTests.swift in Sources */,
+				FAE1E0C620151A1D0014BAFA /* AMFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 954A07071CC3532266A023F1 /* Pods-AMForm.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -474,6 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyMerle.AMForm;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -483,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE8F147CA46B763EA2B4F380 /* Pods-AMForm.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -505,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7C527830E6B0DBF6E7ADF3F /* Pods-AMFormTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
 				INFOPLIST_FILE = AMFormTests/Info.plist;
@@ -520,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1BF607496E92C11CB496ED7 /* Pods-AMFormTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
 				INFOPLIST_FILE = AMFormTests/Info.plist;
