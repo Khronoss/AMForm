@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7133053C30DF6BE7B6922D30 /* Pods_AMFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */; };
+		D5FB878C6986E0C7C2010D1F /* Pods_AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A911098CD2C286BE99D81D1 /* Pods_AMForm.framework */; };
 		FAE1E0B420150EFE0014BAFA /* AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE1E0AA20150EFE0014BAFA /* AMForm.framework */; };
 		FAE1E0B920150EFE0014BAFA /* AMFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0B820150EFE0014BAFA /* AMFormTests.swift */; };
 		FAE1E0BB20150EFE0014BAFA /* AMForm.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE1E0AD20150EFE0014BAFA /* AMForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A911098CD2C286BE99D81D1 /* Pods_AMForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		954A07071CC3532266A023F1 /* Pods-AMForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMForm/Pods-AMForm.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BF607496E92C11CB496ED7 /* Pods-AMFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C527830E6B0DBF6E7ADF3F /* Pods-AMFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE8F147CA46B763EA2B4F380 /* Pods-AMForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMForm/Pods-AMForm.release.xcconfig"; sourceTree = "<group>"; };
 		FAE1E0AA20150EFE0014BAFA /* AMForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE1E0AD20150EFE0014BAFA /* AMForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMForm.h; sourceTree = "<group>"; };
 		FAE1E0AE20150EFE0014BAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5FB878C6986E0C7C2010D1F /* Pods_AMForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +53,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE1E0B420150EFE0014BAFA /* AMForm.framework in Frameworks */,
+				7133053C30DF6BE7B6922D30 /* Pods_AMFormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233EC360BEF43870F0659B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A911098CD2C286BE99D81D1 /* Pods_AMForm.framework */,
+				E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33A746ABA3C6CE5ABA49CC26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				954A07071CC3532266A023F1 /* Pods-AMForm.debug.xcconfig */,
+				EE8F147CA46B763EA2B4F380 /* Pods-AMForm.release.xcconfig */,
+				E7C527830E6B0DBF6E7ADF3F /* Pods-AMFormTests.debug.xcconfig */,
+				E1BF607496E92C11CB496ED7 /* Pods-AMFormTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAE1E0A020150EFE0014BAFA = {
 			isa = PBXGroup;
 			children = (
 				FAE1E0AC20150EFE0014BAFA /* AMForm */,
 				FAE1E0B720150EFE0014BAFA /* AMFormTests */,
 				FAE1E0AB20150EFE0014BAFA /* Products */,
+				33A746ABA3C6CE5ABA49CC26 /* Pods */,
+				233EC360BEF43870F0659B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE1E0BE20150EFE0014BAFA /* Build configuration list for PBXNativeTarget "AMForm" */;
 			buildPhases = (
+				4FAE4FEAE791D44A5AA9142A /* [CP] Check Pods Manifest.lock */,
 				FAE1E0A520150EFE0014BAFA /* Sources */,
 				FAE1E0A620150EFE0014BAFA /* Frameworks */,
 				FAE1E0A720150EFE0014BAFA /* Headers */,
 				FAE1E0A820150EFE0014BAFA /* Resources */,
+				4DC515212A02C8492770B8F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE1E0C120150EFE0014BAFA /* Build configuration list for PBXNativeTarget "AMFormTests" */;
 			buildPhases = (
+				2ADC90956F413A6C4847AB34 /* [CP] Check Pods Manifest.lock */,
 				FAE1E0AF20150EFE0014BAFA /* Sources */,
 				FAE1E0B020150EFE0014BAFA /* Frameworks */,
 				FAE1E0B120150EFE0014BAFA /* Resources */,
+				4A6BED1FE5D9FEAB53B3D796 /* [CP] Embed Pods Frameworks */,
+				75A0A263E57FFBA9DD8AC4A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +227,95 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ADC90956F413A6C4847AB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMFormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A6BED1FE5D9FEAB53B3D796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC515212A02C8492770B8F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMForm/Pods-AMForm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FAE4FEAE791D44A5AA9142A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A0A263E57FFBA9DD8AC4A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAE1E0A520150EFE0014BAFA /* Sources */ = {
@@ -333,6 +459,7 @@
 		};
 		FAE1E0BF20150EFE0014BAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954A07071CC3532266A023F1 /* Pods-AMForm.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +481,7 @@
 		};
 		FAE1E0C020150EFE0014BAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8F147CA46B763EA2B4F380 /* Pods-AMForm.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +503,7 @@
 		};
 		FAE1E0C220150EFE0014BAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C527830E6B0DBF6E7ADF3F /* Pods-AMFormTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
@@ -389,6 +518,7 @@
 		};
 		FAE1E0C320150EFE0014BAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1BF607496E92C11CB496ED7 /* Pods-AMFormTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQSW558QPZ;
