@@ -8,7 +8,20 @@
 
 import Foundation
 
-struct AMFormInput {
+public struct AMFormInput {
+	public enum InputType {
+		case text
+	}
+	
 	let title: String
 	let tag: String
+	let type: InputType
+	
+	public init(title: String,
+				tag: String,
+				type: InputType) {
+		self.title = title
+		self.tag = tag
+		self.type = type
+	}
 }

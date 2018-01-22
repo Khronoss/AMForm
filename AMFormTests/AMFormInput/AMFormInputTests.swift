@@ -14,12 +14,14 @@ import Nimble
 class AMFormInputTests: QuickSpec {
 	override func spec() {
 		describe("An input") {
-			it("Should init with a name and a tag") {
+			it("Should init with a name, a tag and a type") {
 				let input = AMFormInput(title: "The input",
-										tag: "input_001")
+										tag: "input_001",
+										type: .text)
 				
 				expect(input.title).to(equal("The input"))
 				expect(input.tag).to(equal("input_001"))
+				expect(input.type).to(equal(AMFormInput.InputType.text))
 			}
 		}
 	}

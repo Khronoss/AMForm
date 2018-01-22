@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7133053C30DF6BE7B6922D30 /* Pods_AMFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */; };
 		D5FB878C6986E0C7C2010D1F /* Pods_AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A911098CD2C286BE99D81D1 /* Pods_AMForm.framework */; };
+		FAA8D6CD20168ED6000C8C88 /* IAMForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8D6CC20168ED6000C8C88 /* IAMForm.swift */; };
+		FAA8D6CF20169252000C8C88 /* AMFormValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8D6CE20169252000C8C88 /* AMFormValidationTests.swift */; };
 		FAE1E0B420150EFE0014BAFA /* AMForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE1E0AA20150EFE0014BAFA /* AMForm.framework */; };
 		FAE1E0BB20150EFE0014BAFA /* AMForm.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE1E0AD20150EFE0014BAFA /* AMForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE1E0C620151A1D0014BAFA /* AMFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1E0C520151A1D0014BAFA /* AMFormTests.swift */; };
@@ -34,6 +36,8 @@
 		E1E46EF8A2B473483E1C1668 /* Pods_AMFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C527830E6B0DBF6E7ADF3F /* Pods-AMFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMFormTests/Pods-AMFormTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE8F147CA46B763EA2B4F380 /* Pods-AMForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMForm/Pods-AMForm.release.xcconfig"; sourceTree = "<group>"; };
+		FAA8D6CC20168ED6000C8C88 /* IAMForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAMForm.swift; sourceTree = "<group>"; };
+		FAA8D6CE20169252000C8C88 /* AMFormValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFormValidationTests.swift; sourceTree = "<group>"; };
 		FAE1E0AA20150EFE0014BAFA /* AMForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE1E0AD20150EFE0014BAFA /* AMForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMForm.h; sourceTree = "<group>"; };
 		FAE1E0AE20150EFE0014BAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE1E0C520151A1D0014BAFA /* AMFormTests.swift */,
+				FAA8D6CE20169252000C8C88 /* AMFormValidationTests.swift */,
 			);
 			path = AMForm;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		FAE1E0CA20151DA40014BAFA /* AMForm */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8D6CC20168ED6000C8C88 /* IAMForm.swift */,
 				FAE1E0CB20151DAF0014BAFA /* AMForm.swift */,
 			);
 			path = AMForm;
@@ -366,6 +372,7 @@
 			files = (
 				FAE1E0C920151D350014BAFA /* AMFormInput.swift in Sources */,
 				FAE1E0CC20151DAF0014BAFA /* AMForm.swift in Sources */,
+				FAA8D6CD20168ED6000C8C88 /* IAMForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA8D6CF20169252000C8C88 /* AMFormValidationTests.swift in Sources */,
 				FAE1E0CF20151F0E0014BAFA /* AMFormInputTests.swift in Sources */,
 				FAE1E0C620151A1D0014BAFA /* AMFormTests.swift in Sources */,
 			);

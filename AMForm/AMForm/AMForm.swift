@@ -8,10 +8,20 @@
 
 import Foundation
 
-struct AMForm {
-	var inputs: [AMFormInput]
+public struct AMForm {
+	var values: [String: Any] = [:]
+}
+
+extension AMForm: IAMForm {
+	mutating func set(_ value: Any?, for inputTag: String) {
+		values[inputTag] = value
+	}
 	
-	init(with inputs: [AMFormInput]) {
-		self.inputs = inputs
+	mutating func value(for inputTag: String) -> Any? {
+		return values[inputTag]
+	}
+	
+	func validate() -> Bool {
+		return true
 	}
 }

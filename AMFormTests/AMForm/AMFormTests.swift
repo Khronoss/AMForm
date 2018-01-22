@@ -14,17 +14,26 @@ import Nimble
 class AMFormTests: QuickSpec {
 	override func spec() {
 		describe("A simple Form") {
-			it("Should init from a list of input form descriptions") {
-				let input1 = AMFormInput(title: "An input",
-										 tag: "input_001")
-
-				let inputs = [
-					input1
-				]
-				let aForm = AMForm(with: inputs)
+			it("Should set a value for an inputTag") {
+				let inputTag = "input_001"
+				var form = AMForm()
 				
-				expect(aForm).notTo(beNil())
-				expect(aForm.inputs.count).to(equal(1))
+				form.set("A value", for: inputTag)
+				
+				let value = form.values[inputTag] as? String
+				expect(value).notTo(beNil())
+				expect(value).to(equal("A value"))
+			}
+			
+			it("Should get a value for an inputTag") {
+				let inputTag = "input_001"
+				var form = AMForm()
+				
+				form.values[inputTag] = "A value"
+				
+				let value = form.value(for: inputTag) as? String
+				expect(value).notTo(beNil())
+				expect(value).to(equal("A value"))
 			}
 		}
 	}
